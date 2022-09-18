@@ -24,69 +24,67 @@
     
       <!-- Devicon -->
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
-          
 
       <!-- CSS  -->
-      <link rel = "stylesheet" href = "css/style_global.css">
-      <link rel = "stylesheet" href = "css/style_homepage.css">
-
+      <link rel = "stylesheet" href = "css/style.css">
 
       <!-- FavIcon -->
       <link rel="icon" href="img/aafo.png">
-
 
     <title>AAFO - Portfolio - HomePage</title>
 </head>
 
   <!-- Header -->
-  <div class="container container-notlast header header-hp" id="header">
-    <nav class="navigation-bar">
+  <div class="container" id="header">
+    <div class="header">
+      <nav class="navigation-bar">
 
-      <h1><b><span>A</span>A<span>F</span>O</b></h1>
-
-      <ul>
-        <li><a href="#about">About Me</a></li>
-        <li><a href="#portfolio">My Portfolio</a></li>
-        <li><a href="#contact">Contact Me</a></li>
-      </ul>
-    </nav>
-
-
-    <div class="header-text">
-      <p>Data Scientist / Machine Learning Engineer</p>
-      <h1>Hi! I am Adrián Ferrer</h1>
+        <h1><b><span>A</span>A<span>F</span>O</b></h1>
+  
+        <ul>
+          <li><a href="#about">About Me</a></li>
+          <li><a href="#portfolio">My Portfolio</a></li>
+          <li><a href="#contact">Contact Me</a></li>
+        </ul>
+      </nav>
+  
+      <div class="header-text">
+        <p>Data Scientist / Machine Learning Engineer</p>
+        <h1>Hi! I am Adrián Ferrer</h1>
+      </div>
     </div>
   </div>
   <!-- Header -->
 
   <!-- About -->
-  <div class="container container-notlast" id = "about">
+  <div class="container" id = "about">
     <div class="row-centered">
+
       <div class="about-col-1">
         <img src="img/adrian.png">
       </div>
-      <div class="about-col-2">
 
+      <div class="about-col-2">
         <div>
           <h1 class="subtitle">About Me</h2>
-          <p>Enthusiastic <span>Data Scientist</span> eager to contribute to team success through hard work, attention to detail and excellent organizational and planning skills. Clear understanding of Modeling in <span>Machine Learning</span>. Motivated to learn, grow and excel in <span>AI</span> and <span>Investigation</span>.</p>
+          <p>
+            Enthusiastic <span>Data Scientist</span> eager to contribute to team success through hard work, attention to detail and excellent organizational and planning skills. Clear understanding of Modeling in <span>Machine Learning</span>. Motivated to learn, grow and excel in <span>AI</span> and <span>Investigation</span>.
+          </p>
         </div>
-        
-        <div class="row-around tab-titles">
 
+        <div class="row-centered tab-titles">
           <div class="tab-links active-link" onclick = "opentab('skills')">Skills</div>
           <div class="tab-links" onclick = "opentab('education')">Education</div>
           <div class="tab-links" onclick = "opentab('experience')">Experience</div>
           <div class="tab-links" onclick = "opentab('certifications')">Certifications</div>
           <div class="tab-links" onclick = "opentab('other')">Other</div>
-
         </div>
 
         <div class="tab-contents active-tab" id="skills">
           <div class="row-around">
-            <div>
+            <div class="general-skills">
               <p class="skills-title"><b>General</b></p>
-              <ul class="styled-list">
+              <ul>
                 <li>Data Analysis and Statistics</li>
                 <li>Machine Learning</li>
                 <li>Data Visualization</li>
@@ -95,9 +93,8 @@
                 <li>Web / web app development</li>
               </ul>
             </div>
-
             <div class="specific-skills">
-              <p><b>Specific</b></p>
+              <p class="skills-title"><b>Specific</b></p>
               <ul>
                 <li>Scikit-learn, keras, numpy and scipy domain</li>
                 <li>Advanced Multivariate regression and correlation analysis</li>
@@ -106,17 +103,20 @@
             </div>
           </div>
         </div>
+
         <div class="tab-contents" id="education">
           <ul class="nonstyled-list">
             <li><span>2019-2023 (present)</span><br>BSc Data Science and Mathematics Engineering, ITESM México</li>
             <li><span>2022-2023 (present)</span><br>Exchange Semester in Mathematics and Computer Science Courses, EPFL Switzerland</li>
           </ul>
         </div>
+
         <div class="tab-contents" id="experience">
           <ul>
             <li><span>2020-2021</span><br>Semi-supervised anomaly detection based on autoencoders</i><br><br>Supervision and evaluation of various trained models, development of code, Neural Network architectures, and code execution on several environments. Development under supervision of Ph.D. Miguel Ángel Medina Pérez.</li>   
           </ul>
         </div>
+        
         <div class="tab-contents" id="certifications">
           <ul class="nonstyled-list">
             <li><span>2022</span><br>IELTS Band 8 CEFR C1 Level Certification</li>
@@ -126,6 +126,7 @@
             <li><span>2020</span><br>Machine Learning Fundamentals with Python, Datacamp</li>
           </ul>
         </div>
+
         <div class="tab-contents" id="other">
           <div class="row-around">
             <div>
@@ -135,7 +136,6 @@
                 <li>English <span>advanced (C1)</span></li>
               </ul>
             </div>
-        
             <div class="other-skills">
               <p><b>Other Skills</b></p>
               <ul>
@@ -153,8 +153,7 @@
     </div>
   </div>
 
-
-  <div class="container container-notlast" id="Programming Languages">
+  <div class="container" id="Programming Languages">
     <h1 class="subtitle"> Programming Languages & FrameWorks</h1>
     <div class="row-centered">
       <div class="icon"> 
@@ -221,25 +220,25 @@
   </div>
   <!-- About -->
 
-  <div class="container container-notlast" id="portfolio">
+  <!-- Portfolio -->
+  <div class="container" id="portfolio">
 
     <h1 class="subtitle">My Portfolio</h1>
 
-    <div class="featured-projects">
-
+    <div class="portfolio-container">
       <div class="project">
         <img src="img/proj1-thumbnail.png">
         <div class="layer">
-          <h1 class="subsubtitle">Credit Scoring using Advanced Multivariate Linear Regression Analysis (2021)</h1>
+          <h1 class="subtitle">Credit Scoring using Advanced Multivariate Linear Regression Analysis (2021)</h1>
           <p>Project developed under the supervision of Mexican corporation Pretmex. Tasked with expanding a previous empiric-developed credit score scale based on previous client data. The data was analyzed with the aid of the newly created scale and with advanced correlation and multivariate linear regression analysis. Separation and classification with these statistics and other machine learning techniques to predict client credit standing. Lead code developer and project designer.</p>
-          <a href="template-project-description.html">Read More: <br> <span  class="material-symbols-outlined">read_more</span></a>
+          <a href="template-project-description.html">Read More: <br> <span class="material-symbols-outlined">read_more</span></a>
         </div>
       </div>
 
       <div class="project">
         <img src="img/proj2-thumbnail.png">
         <div class="layer">
-          <h1 class="subsubtitle">E-commerce vehicle capacity vehicle routing problem (CVRP) optimization (2021)</h1>
+          <h1 class="subtitle">E-commerce vehicle capacity vehicle routing problem (CVRP) optimization (2021)</h1>
           <p>Project developed under supervision of Mexican nationwide department store Coppel. An alternate solution methodology is proposed for NP-hard CVRP using clustering, local optimization algorithms and regular travelling salesman problem. Developed code and dummy deployment application.</p>
           <a href="template-project-description.html">Read More: <br> <span  class="material-symbols-outlined">read_more</span></a>
         </div>
@@ -248,8 +247,8 @@
       <div class="project">
         <img src="img/proj3-thumbnail.png">
         <div class="layer">
-          <h1 class="subsubtitle">"Red Neuronal Multicapa para predecir la defunción en casos de COVID-19." (2020-2021)</h1>
-          <p>Presented in 51 Congreso de Investigación y Desarrollo, Tecnológico de Monterrey. Prediction of death probability for a patient based on certain comorbidities and other factors. Conceptualized as an auxiliary tool to aid in prioritizing medical attention. Leaded code architecture and web app development. A <a href="https://adrianfo-16-nn-covid-19-app-app-2umubp.streamlitapp.com">streamlit web app</a> is presented with the results of the model iterations.</p>
+          <h1 class="subtitle">"Red Neuronal Multicapa para predecir la defunción en casos de COVID-19." (2020-2021)</h1>
+          <p>Presented in 51 Congreso de Investigación y Desarrollo, Tecnológico de Monterrey. Prediction of death probability for a patient based on certain comorbidities and other factors. Conceptualized as an auxiliary tool to aid in prioritizing medical attention. Leaded code architecture and web app development. A <a href="https://adrianfo-16-nn-covid-19-app-app-2umubp.streamlitapp.com" target="_blank">streamlit web app</a> is presented with the results of the model iterations.</p>
           <a href="template-project-description.html">Read More: <br> <span  class="material-symbols-outlined">read_more</span></a>
         </div>
       </div>
@@ -257,58 +256,57 @@
       <div class="project">
         <img src="img/proj4-thumbnail.png">
         <div class="layer">
-          <h1 class="subsubtitle">Digital Signature (DS) Algorithm Implementation (2022)</h1>
-          <p>Project developed under the supervision of non-lucrative Mexican organization Teletón. A multidisciplinary project with the objective of making cryptographic technology accessible for non technical users. Lead code designer, app functionality and user cycle. Developed the main logic and Python code blocks to be used in the final application, assisted in UI and app design. The final product consists of the app implementation of the DS algorithm and a publcity <a href="https://optima-app.000webhostapp.com/index.html">dummy web page.</a></p>
+          <h1 class="subtitle">Digital Signature (DS) Algorithm Implementation (2022)</h1>
+          <p>Project developed under the supervision of non-lucrative Mexican organization Teletón. A multidisciplinary project with the objective of making cryptographic technology accessible for non technical users. Lead code designer, app functionality and user cycle. Developed the main logic and Python code blocks to be used in the final application, assisted in UI and app design. The final product consists of the app implementation of the DS algorithm and a publcity <a href="https://optima-app.000webhostapp.com/index.html" target="_blank">dummy web page.</a></p>
           <a href="template-project-description.html">Read More: <br> <span  class="material-symbols-outlined">read_more</span></a>
         </div>
       </div>
-
     </div>
+
     <a class="button" href="projects.html">See More</a>
-
   </div>
+  <!-- Portfolio -->
 
-
+  <!-- Contact -->
   <div class="container" id="contact">
 
     <h1 class="subtitle">Contact Me</h1>
 
     <div class="row-centered">
       <a href="mailto: aafo1416@gmail.com" class="material-symbols-outlined socials-icon">mail</a>
-      <a href="https://www.linkedin.com/in/adrianfo/" class="devicon-linkedin-plain socials-icon"></a>
-      <a href="https://github.com/AdrianFO-16/" class="devicon-github-plain socials-icon"></a>
+      <a href="https://www.linkedin.com/in/adrianfo/" class="devicon-linkedin-plain socials-icon" target="_blank"></a>
+      <a href="https://github.com/AdrianFO-16/" class="devicon-github-plain socials-icon" target="_blank"></a>
     </div>
 
     <a class="button" href="files/AdrianFerrerCV.pdf" download>Download my CV</a>
 
     <a class="button" href="#header">Go to Top</a>
   </div>
-
+  <!-- Contact -->
   
   <div class="foot-copy"><p>Made By: Adrián Ferrer</p></div>
   <div class="under-construction"><p>Site under construction :)</p></div>
 
-<!-- Scripts -->
-      <!--About Script-->
-      <script>
+  <!-- Scripts -->
+    <!--About Script-->
+    <script>
 
-        var tablinks = document.getElementsByClassName("tab-links");
-        var tabcontents = document.getElementsByClassName("tab-contents");
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
 
-        function opentab(tabname){
-            for(tablink of tablinks){
-                tablink.classList.remove('active-link')
-            }
+      function opentab(tabname){
+          for(tablink of tablinks){
+              tablink.classList.remove('active-link')
+          }
 
-            for(tabcontent of tabcontents){
-                tabcontent.classList.remove('active-tab')
-            }
+          for(tabcontent of tabcontents){
+              tabcontent.classList.remove('active-tab')
+          }
 
-            event.currentTarget.classList.add('active-link');
-            document.getElementById(tabname).classList.add('active-tab');
-        }
+          event.currentTarget.classList.add('active-link');
+          document.getElementById(tabname).classList.add('active-tab');
+      }
 
-    </script>
-
+  </script>
 </body>
 </html>
