@@ -11,6 +11,14 @@ body{
     color: #FFF;
 }
 
+.subbody{
+    background-image: url(../img/background_inv_60.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 100%;
+}
+
 html{
     scroll-behavior: smooth;
 }
@@ -373,11 +381,14 @@ span{
     gap: 20px;
 }
 
+
 .project{
     border-radius: 15px;
     position: relative;
     overflow: hidden;
 }
+
+
 
 .project img{
     width: 100%;
@@ -434,10 +445,12 @@ span{
     height: 100%;
 }
 
+.note{
+    margin: 20px;
+    font-size: 13px;
+}
 
 @media only screen  and (max-width: 900px){
-
-
 
     .header{
         background-image: url(../img/background.png);
@@ -471,10 +484,4 @@ span{
         flex-grow: 1;
         flex-basis: 40%;
     }
-
-
-
-
-
-
 }
