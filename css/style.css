@@ -5,6 +5,7 @@
     box-sizing: border-box;
 }
 
+
 body{
     background: #080808;
     background: linear-gradient(180deg, rgba(8,8,8,1) 65%, rgb(4, 46, 65) 100%);
@@ -12,7 +13,7 @@ body{
 }
 
 .subbody{
-    background-image: url(../img/background_inv_60.png);
+    background-image: url(../img/background_inv_30.png);
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -234,6 +235,10 @@ span{
     margin: 20px;
     text-align: center;
 }
+.about-col-1 img{
+    
+    border-radius: 75px;
+}
 
 .about-col-1 img{
     width: 100%;
@@ -301,8 +306,17 @@ span{
     font-size: 16px;
 }
 
+.styled-list li a{
+ 
+    color: white;
+}
+
 .tab-contents.active-tab{
     display: block;
+}
+
+.normal-list{
+    list-style: lower-alpha;
 }
 
 
@@ -378,7 +392,7 @@ span{
 .portfolio-container{
     display: grid;
     align-items: center;
-    grid-template-columns: repeat(2, minmax(auto,  1fr));
+    grid-template-columns: repeat(2, minmax(auto, 50%));
     gap: 20px;
 }
 
@@ -403,11 +417,11 @@ span{
 }
 
 .project p{
-    font-size: 1.5vw;
+    font-size: 1.2vw;
 }
 
 .project a{
-    text-decoration: none;
+    text-decoration: underline;
     color: white;
     font-size: 1.2vw;
 }
