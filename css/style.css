@@ -323,7 +323,7 @@ span{
 
 
 
-.specific-skills{
+.complementary-skills{
     border-radius: 10px;
     border: 1px solid #0892d0;
     width: 50%;
@@ -489,7 +489,7 @@ span{
         bottom: -12px;
     }
     
-    .specific-skills{
+    .complementary-skills{
         margin-top: 20px;
         width: fit-content;
     }
