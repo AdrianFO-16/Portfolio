@@ -156,13 +156,14 @@ a:visited{
     display: block;
     margin: 50px auto;
     width: fit-content;
-    border: 1px solid #00aeff;
+    border: 0px solid #00aeff;
     padding: 14px 50px;
     border-radius: 6px;
     text-decoration: none;
     color: #FFF;
     transition: 0.5s;
     text-align: center;
+    background-color: #00aeff46;
 }
 
 .button:hover{
