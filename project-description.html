@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Google Fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+
+    <!-- Google Icons  -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <style>
+        .material-symbols-outlined {
+          font-variation-settings:
+          'FILL' 1,
+          'wght' 400,
+          'GRAD' 0,
+          'opsz' 40
+        }
+        </style>
+
+    <!-- Devicon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+
+    <!-- CSS  -->
+    <link rel = "stylesheet" href = "css/style.css">
+
+    <!-- FavIcon -->
+    <link rel="icon" href="img/aafo.png">
+    
+    <title>AAFO - Portfolio - Project Template</title>
+</head>
+<body>
+
+    <!-- Header -->
+    <div class="container header" id="header">
+    <nav class="navigation-bar">
+
+        <a href="index.html" style="text-decoration: none;">
+            <h1><b><span>A</span>A<span>F</span>O</b></h1>
+          </a>
+          
+        <ul>
+        <li><a href="index.html">Home Page</a></li>
+        <li><a href="projects.html">Portfolio</a></li>
+        <li><a href="#introduction">Introduction</a></li>
+        <!-- <li><a href="#graphic">Flow Chart</a></li> -->
+        <li><a href="#results">Results</a></li>
+        <li><a href="#conclusion">Conclusion</a></li>
+        <!-- <li><a href="#source-code">Source Code</a></li> -->
+        <li><a href="#contact">Contact Me</a></li>
+        </ul>
+    </nav>
+
+
+        <div class="header-text"> 
+            <h1 id="title-cont">Project Title</h1>
+            <p id="abstract-cont">Short description / summary</p>
+            
+        </div>
+    </div>
+    <!-- Header -->
+
+    <div class="subbody">
+    <div class="container" id="introduction">
+        <h1 class="subtitle">Introduction</h1>
+        <p id="intro-cont">Concise, but comprehensive project description</p>
+    </div>
+
+    <!-- <div class="container" id="graphic">
+        <h1 class="subtitle">Graphic Explanaition / Flowchart</h1>
+        <p>Graphic representation of the project. </p>
+    </div> -->
+
+    <div class="container" id="results">
+        <h1 class="subtitle">Results</h1>
+        <p id="results-cont">Main results of the project. Tables, charts, short analysis.</p>
+    </div>
+
+
+    <div class="container" id="conclusion">
+        <h1 class="subtitle">Conclusion</h1>
+        <p id="conclusion-cont">Main highlights and insights produced during the project.</p>
+    </div>
+
+    <!-- <div class="container" id="source-code">
+        <h1 class="subtitle">Source Code / Code Embeds</h1>
+        <p>Source code examples, snippets, main functions, link to github repository, and any possible code embed for live testing.</p>
+    </div> -->
+
+
+    <div class="container" id="contact">
+
+        <h1 class="subtitle">Contact Me</h1>
+    
+        <div class="row-centered">
+          <a href="mailto: aafo1416@gmail.com" class="material-symbols-outlined socials-icon">mail</a>
+          <a href="https://www.linkedin.com/in/adrianfo/" class="devicon-linkedin-plain socials-icon" target="_blank"></a>
+          <a href="https://github.com/AdrianFO-16/" class="devicon-github-plain socials-icon" target="_blank"></a>
+        </div>
+    
+        <a class="button" href="files/AdrianFerrerCV.pdf" download>Download my CV</a>
+    
+        <a class="button" href="#header">Go to Top</a>
+      </div>
+  
+
+      <div class="foot-copy"><p>Made By: Adrián Ferrer</p></div>
+      <div class="under-construction"><p>Site under construction :)</p></div>
+
+    </div>
+
+
+    <script>
+        
+        fetch('./data/project-data.json')
+        .then((response) => response.json())
+        .then((json) => displayProjectData(json))
+
+
+        function displayProjectData(json){
+
+            const urlParams = new URLSearchParams(window.location.search);
+
+            const project = urlParams.get("project");
+
+            if (project == undefined){
+                console.error("Project not defined in url query");
+            }
+
+            const projectData = json[project];
+
+            document.title = projectData["title"]
+
+            document.getElementById("title-cont").textContent = projectData["title"]
+            document.getElementById("abstract-cont").textContent = projectData["abstract"]
+            document.getElementById("intro-cont").textContent = projectData["introduction"]
+            document.getElementById("results-cont").textContent = projectData["results"]
+            document.getElementById("conclusion-cont").textContent = projectData["conclusion"]
+        }
+        
+
+    </script>
+</body>
+</html>

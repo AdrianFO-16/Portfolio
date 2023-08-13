@@ -443,6 +443,29 @@ a:visited{
     font-size: 1.8vw;
 }
 
+.project li {
+    font-size: 1.2vw;
+}
+
+.read-more-btn{
+    display: block;
+    margin: 20px auto;
+    width: fit-content;
+    border: 0px solid #00aeff;
+    padding: 5px 20px;
+    border-radius: 15px;
+    text-decoration: none;
+    color: #FFF;
+    transition: 0.5s;
+    text-align: center;
+    background-color: #00aeff46;
+}
+
+.read-more-btn:hover{
+    background: #00aeff;
+}
+
+
 
 .layer{
     width: 100%;

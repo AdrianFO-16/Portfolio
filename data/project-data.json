@@ -1,0 +1,83 @@
+{
+    "proj-template": {
+        "title": "Titulo",
+        "abstract": "abstract",
+        "introduction": "introduction",
+        "results": "results",
+        "conclusion": "conclusion"
+    },
+
+    "1": {
+        "title": "Credit Scoring using Advanced Multivariate Linear Regression Analysis (2021)",
+        "abstract": "abstract",
+        "introduction": "introduction",
+        "results": "results",
+        "conclusion": "conclusion"
+    },
+
+    "2": {
+        "title": "E-commerce vehicle capacity vehicle routing problem (CVRP) optimization (2021)",
+        "abstract": "abstract",
+        "introduction": "introduction",
+        "results": "results",
+        "conclusion": "conclusion"
+    },
+
+    "3": {
+        "title": "'Red Neuronal Multicapa para predecir la defunción en casos de COVID-19.' (2020-2021)",
+        "abstract": "abstract",
+        "introduction": "introduction",
+        "results": "results",
+        "conclusion": "conclusion"
+    },
+
+    "4": {
+        "title": "Digital Signature (DS) Algorithm Implementation (2022)",
+        "abstract": "abstract",
+        "introduction": "introduction",
+        "results": "results",
+        "conclusion": "conclusion"
+    },
+
+    "5": {
+        "title": "Topological Data Analysis (TDA) in gravitational wave data using time delay embedding (2022)",
+        "abstract": "abstract",
+        "introduction": "introduction",
+        "results": "results",
+        "conclusion": "conclusion"
+    },
+
+    "6": {
+        "title": "Control Theory for building vibration control in earthquakes (2022)",
+        "abstract": "abstract",
+        "introduction": "introduction",
+        "results": "results",
+        "conclusion": "conclusion"
+    },
+
+    "7": {
+        "title": "Ruin Probability with Crammer-Lundberg Risk Model (2021)",
+        "abstract": "abstract",
+        "introduction": "introduction",
+        "results": "results",
+        "conclusion": "conclusion"
+    },
+
+    "8": {
+        "title": "Online Portfolio (2022-present)",
+        "abstract": "abstract",
+        "introduction": "introduction",
+        "results": "results",
+        "conclusion": "conclusion"
+    },
+
+    "9": {
+        "title": "Hacking the Oscars data story (2022)",
+        "abstract": "abstract",
+        "introduction": "introduction",
+        "results": "results",
+        "conclusion": "conclusion"
+    }
+
+    
+}
