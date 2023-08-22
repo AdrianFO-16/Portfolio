@@ -32,9 +32,6 @@
 
     <!-- FavIcon -->
     <link rel="icon" href="img/aafo.png">
-
-    <!-- Scripts -->
-    <script type="text/javascript" src="./js/displayProjectGrid.js"></script>
     
     <title>AAFO - Portfolio - Projects</title>
 </head>
@@ -111,7 +108,7 @@
 
       var keywords = data.keywords.
                           slice(0, 5).
-                              reduce((acc, kw) => acc + `<div class="keyword"><span>${kw}</span></div>\n`, '<div class="project-keywords row-around">') + "</div>";
+                              reduce((acc, kw) => acc + `\t\t\t\t\t\t\t\t<div class="keyword"><span>${kw}</span></div>\n`, '<div class="project-keywords row-around">\n') + "\t\t\t\t\t\t\t</div>";
       
 
       project.innerHTML = `
@@ -121,7 +118,7 @@
               ${keywords}
               ${data.description}
               <a class="read-more-btn" href="project-description.html?project=${i}">Read More: <br> <span class="material-symbols-outlined">read_more</span></a>
-          </div>
+          </div>\n
       `;
 
       return project
