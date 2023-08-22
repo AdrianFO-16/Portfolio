@@ -506,6 +506,42 @@ a:visited{
     height: 100%;
 }
 
+
+.project .project-keywords{
+    max-width: 70%;
+}
+
+.project .keyword{
+    font-size: 1vw;
+    margin: 0px 5px 5px 5px;
+
+}
+
+.project .keyword span{
+    padding: 0px 10px;
+}
+
+
+.project-keywords{
+
+    max-width: 60%;
+}
+
+.keyword{
+
+    background-color: #00aeff;
+    border-radius: 5px;
+    margin: 0px 5px 25px 5px;
+    width: fit-content;
+
+}
+
+.keyword span{
+    color: white;
+    padding: 0px 20px;
+}
+
+
 .note{
     margin: 20px;
     font-size: 13px;

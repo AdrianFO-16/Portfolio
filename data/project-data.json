@@ -1,82 +1,110 @@
 {
-    "proj-template": {
-        "title": "Titulo",
-        "abstract": "abstract",
-        "introduction": "introduction",
-        "results": "results",
-        "conclusion": "conclusion"
-    },
-
     "1": {
         "title": "Credit Scoring using Advanced Multivariate Linear Regression Analysis (2021)",
-        "abstract": "abstract",
+        "keywords": ["Advanced Linear Regression", "PCA", "Factor Analysis", "Linear Discriminant",  "Machine Learning", "Statistics", "Python"],
         "introduction": "introduction",
         "results": "results",
-        "conclusion": "conclusion"
+        "conclusion": "conclusion",
+
+        "thumbnailPath": "img/proj1-thumbnail.png",
+
+        "description": "<p>Project developed under the supervision of Mexican corporation Pretmex. Tasked with expanding a previous empiric-developed credit score scale based on previous client data. The data was analyzed with the aid of the newly created scale and with advanced correlation and multivariate linear regression analysis. Separation and classification with these statistics and other machine learning techniques to predict client credit standing. Lead code developer and project designer.</p>"
     },
 
     "2": {
         "title": "E-commerce vehicle capacity vehicle routing problem (CVRP) optimization (2021)",
-        "abstract": "abstract",
+        "keywords": ["TSP", "CVRP", "Optimization", "Machine Learning", "Streamlit", "Python", "Search Algorithms"],
         "introduction": "introduction",
         "results": "results",
-        "conclusion": "conclusion"
+        "conclusion": "conclusion",
+
+        "thumbnailPath": "img/proj2-thumbnail.png",
+
+        "description": "<p>Project developed under supervision of Mexican nationwide department store Coppel. An alternate solution methodology is proposed for NP-hard CVRP using clustering, local optimization algorithms and regular traveling salesman problem. Developed code and dummy deployment application.</p>"
     },
 
     "3": {
         "title": "'Red Neuronal Multicapa para predecir la defunción en casos de COVID-19.' (2020-2021)",
-        "abstract": "abstract",
+        "keywords": ["COVID-19", "Deep Learning", "Python", "Streamlit"],
         "introduction": "introduction",
         "results": "results",
-        "conclusion": "conclusion"
+        "conclusion": "conclusion",
+
+        "thumbnailPath": "img/proj3-thumbnail.png",
+
+        "description": "<p>Presented in 51 Congreso de Investigación y Desarrollo, Tecnológico de Monterrey. Prediction of death probability for a patient based on certain comorbidities and other factors. Conceptualized as an auxiliary tool to aid in prioritizing medical attention. Leaded code architecture and web app development. A <a href='https://adrianfo-16-nn-covid-19-app-app-2umubp.streamlitapp.com' target='_blank'>streamlit web app</a> is presented with the results of the model iterations</p>"
     },
 
     "4": {
         "title": "Digital Signature (DS) Algorithm Implementation (2022)",
-        "abstract": "abstract",
+        "keywords": ["Digital Signature", "Cybersecurity", "Cryptography", "Python", "Software Development"],
         "introduction": "introduction",
         "results": "results",
-        "conclusion": "conclusion"
+        "conclusion": "conclusion",
+
+        "thumbnailPath": "img/proj4-thumbnail.png",
+
+        "description": "<p>Project developed under the supervision of non-lucrative Mexican organization Teletón. A multidisciplinary project with the objective of making cryptographic technology accessible for non technical users. Lead code designer, app functionality and user cycle. Developed the main logic and Python code blocks to be used in the final application, assisted in UI and app design. The final product consists of the app implementation of the DS algorithm and a publicity <a href='https://optima-app.000webhostapp.com/index.html' target='_blank'>dummy web page.</a></p>"
     },
 
     "5": {
         "title": "Topological Data Analysis (TDA) in gravitational wave data using time delay embedding (2022)",
-        "abstract": "abstract",
+        "keywords": ["TDA", "Time Embeddings", "Machine Learning", "Python"],
         "introduction": "introduction",
         "results": "results",
-        "conclusion": "conclusion"
+        "conclusion": "conclusion",
+
+        "thumbnailPath": "img/proj5-thumbnail.png",
+
+        "description": "<p>Analysis of clean and noisy gravitational wave data using time delay embeddings. Vietoris-Rips complex data persistence homology analysis. Classification of noisy and clean gravitational waves based on engineered features from persistence homology.</p>"
     },
 
     "6": {
         "title": "Control Theory for building vibration control in earthquakes (2022)",
-        "abstract": "abstract",
+        "keywords": ["LTI Control", "Earthquake simulation", "Signal Processing", "MATLAB & Simulink"],
         "introduction": "introduction",
         "results": "results",
-        "conclusion": "conclusion"
+        "conclusion": "conclusion",
+
+        "thumbnailPath": "img/proj6-thumbnail.png",
+
+        "description": "<p>Study of modern building LTI models, active and passive actuators concepts for vibration control during earthquakes. System modeled in Simulink and code in state space representation. Analysis of analytic and numeric solutions facing seismic excitation before and after the implementation of control techniques. Lead code developer and project designer.</p>"
     },
 
     "7": {
         "title": "Ruin Probability with Crammer-Lundberg Risk Model (2021)",
-        "abstract": "abstract",
+        "keywords": ["Ruin Probability", "Stochastic Simulation", "Stochastic Optimization", "Crammer-Lundberg Model", "Python"],
         "introduction": "introduction",
         "results": "results",
-        "conclusion": "conclusion"
+        "conclusion": "conclusion",
+
+        "thumbnailPath": "img/proj7-thumbnail.png",
+
+        "description": "<p>Project developed under the supervision of nationwide corporation AXA. Provided a dataset, based on monthly income, client claim amount distribution, and corporation reserve, ruin probability is computed. Results obtained via analytic solution of the Crammer-Lundberg model and simulation. Lead code developer and project designer.</p>"
     },
 
     "8": {
         "title": "Online Portfolio (2022-present)",
-        "abstract": "abstract",
+        "keywords": ["Web Design", "HTML", "CSS", "JS"],
         "introduction": "introduction",
         "results": "results",
-        "conclusion": "conclusion"
+        "conclusion": "conclusion",
+
+        "thumbnailPath": "img/proj8-thumbnail.png",
+
+        "description": "<p>This webpage! This project is being developed with the purpose of learning HTML, CSS, JS, etc. and also complement my academic/professional profile while doing so.</p>"
     },
 
     "9": {
         "title": "Hacking the Oscars data story (2022)",
-        "abstract": "abstract",
+        "keywords": ["Data Analysis", "Causal Inference", "Latent Dirichlet Allocation", "Machine Learning", "Statistics", "Web Design"],
         "introduction": "introduction",
         "results": "results",
-        "conclusion": "conclusion"
+        "conclusion": "conclusion",
+
+        "thumbnailPath": "img/proj9-thumbnail.png",
+
+        "description": "<p>\"Hacking the Oscars\" is a project developed as part of the Applied Data Analysis EPFL course. Elaborate data wrangling performed on <a href='http://www.cs.cmu.edu/~ark/personas/' target='_blank'>CMU movie summary corpus dataset</a> along with IMDb datasets to understand movie success througha data-driven approach. Statistical differences between highest rated and lower rated movies are explored. Use of unsupervised learning techniques such as Latent Dirichlet Allocation for movie summary plots for feature engineering and interpretation. Participated actively in code and analysis design, <a href='https://adrianfo-16.github.io/ADA-adlucere2022-web-page/' target='_blank'>developed the presentation web page (data story).</a></p>"
     }
 
     
