@@ -274,71 +274,7 @@
     <h1 class="subtitle">My Portfolio</h1>
     <p class="note">* Interact to reveal description</p>
 
-    <div class="portfolio-container">
-      <div class="project">
-        <img src="./img/proj9-thumbnail.png">
-              <div class="layer">
-                <h1 class="subtitle">Hacking the Oscars data story (2022)</h1>
-                <div class="project-keywords row-around">
-                  <div class="keyword"><span>Data Analysis</span></div>
-                  <div class="keyword"><span>Causal Inference</span></div>
-                  <div class="keyword"><span>Latent Dirichlet Allocation</span></div>
-                  <div class="keyword"><span>Machine Learning</span></div>
-                  <div class="keyword"><span>Statistics</span></div>
-                </div>
-                <p>"Hacking the Oscars" is a project developed as part of the Applied Data Analysis EPFL course. Elaborate data wrangling performed on <a href="http://www.cs.cmu.edu/~ark/personas/" target="_blank">CMU movie summary corpus dataset</a> along with IMDb datasets to understand movie success througha data-driven approach. Statistical differences between highest rated and lower rated movies are explored. Use of unsupervised learning techniques such as Latent Dirichlet Allocation for movie summary plots for feature engineering and interpretation. Participated actively in code and analysis design, <a href="https://adrianfo-16.github.io/ADA-adlucere2022-web-page/" target="_blank">developed the presentation web page (data story).</a></p>
-                <a class="read-more-btn" href="http://127.0.0.1:5500/project-description.html?project=9">Read More: <br> <span class="material-symbols-outlined">read_more</span></a>
-            </div>
-        </div>
-
-      <div class="project">
-        <img src="./img/proj1-thumbnail.png">
-              <div class="layer">
-                <h1 class="subtitle">Credit Scoring using Advanced Multivariate Linear Regression Analysis (2021)</h1>
-                <div class="project-keywords row-around">
-                  <div class="keyword"><span>Advanced Linear Regression</span></div>
-                  <div class="keyword"><span>PCA</span></div>
-                  <div class="keyword"><span>Factor Analysis</span></div>
-                  <div class="keyword"><span>Linear Discriminant</span></div>
-                  <div class="keyword"><span>Machine Learning</span></div>
-                </div>
-                <p>Project developed under the supervision of Mexican corporation Pretmex. Tasked with expanding a previous empiric-developed credit score scale based on previous client data. The data was analyzed with the aid of the newly created scale and with advanced correlation and multivariate linear regression analysis. Separation and classification with these statistics and other machine learning techniques to predict client credit standing. Lead code developer and project designer.</p>
-                <a class="read-more-btn" href="http://127.0.0.1:5500/project-description.html?project=1">Read More: <br> <span class="material-symbols-outlined">read_more</span></a>
-            </div>
-  
-        </div>
-
-        <div class="project">
-          <img src="./img/proj2-thumbnail.png">
-                <div class="layer">
-                  <h1 class="subtitle">E-commerce vehicle capacity vehicle routing problem (CVRP) optimization (2021)</h1>
-                  <div class="project-keywords row-around">
-                    <div class="keyword"><span>TSP</span></div>
-                    <div class="keyword"><span>CVRP</span></div>
-                    <div class="keyword"><span>Optimization</span></div>
-                    <div class="keyword"><span>Machine Learning</span></div>
-                    <div class="keyword"><span>Streamlit</span></div>
-                  </div>
-                  <p>Project developed under supervision of Mexican nationwide department store Coppel. An alternate solution methodology is proposed for NP-hard CVRP using clustering, local optimization algorithms and regular traveling salesman problem. Developed code and dummy deployment application.</p>
-                  <a class="read-more-btn" href="http://127.0.0.1:5500/project-description.html?project=2">Read More: <br> <span class="material-symbols-outlined">read_more</span></a>
-              </div>
-          </div>
-
-      <div class="project">
-        <img src="./img/proj3-thumbnail.png">
-            <div class="layer">
-              <h1 class="subtitle">'Red Neuronal Multicapa para predecir la defunción en casos de COVID-19.' (2020-2021)</h1>
-              <div class="project-keywords row-around">
-								<div class="keyword"><span>COVID-19</span></div>
-								<div class="keyword"><span>Deep Learning</span></div>
-								<div class="keyword"><span>Python</span></div>
-								<div class="keyword"><span>Streamlit</span></div>
-							</div>
-              <p>Presented in 51 Congreso de Investigación y Desarrollo, Tecnológico de Monterrey. Prediction of death probability for a patient based on certain comorbidities and other factors. Conceptualized as an auxiliary tool to aid in prioritizing medical attention. Leaded code architecture and web app development. A <a href="https://adrianfo-16-nn-covid-19-app-app-2umubp.streamlitapp.com/" target="_blank">streamlit web app</a> is presented with the results of the model iterations</p>
-              <a class="read-more-btn" href="http://127.0.0.1:5500/project-description.html?project=3">Read More: <br> <span class="material-symbols-outlined">read_more</span></a>
-          </div>
-      </div>
-    </div>
+    <div class="portfolio-container" id="portfolio-container"></div>
 
     <a class="button" href="projects.html">See More</a>
   </div>
@@ -365,24 +301,65 @@
 
   </div>
   <!-- Scripts -->
-    <!--About Script-->
     <script>
 
-      var tablinks = document.getElementsByClassName("tab-links");
-      var tabcontents = document.getElementsByClassName("tab-contents");
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
 
-      function opentab(tabname){
-          for(tablink of tablinks){
-              tablink.classList.remove('active-link')
-          }
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove('active-link')
+        }
 
-          for(tabcontent of tabcontents){
-              tabcontent.classList.remove('active-tab')
-          }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove('active-tab')
+        }
 
-          event.currentTarget.classList.add('active-link');
-          document.getElementById(tabname).classList.add('active-tab');
-      }
+        event.currentTarget.classList.add('active-link');
+        document.getElementById(tabname).classList.add('active-tab');
+    }
+
+
+    fetch('./data/project-data.json')
+        .then((response) => response.json())
+        .then((json) => displayProjectData(json));
+
+    function createProjectElement(data, i){
+        var project = document.createElement('div');
+        project.className = "project"
+
+        var keywords = data.keywords.
+                            slice(0, 5).
+                                reduce((acc, kw) => acc + `\t\t\t\t\t\t\t\t<div class="keyword"><span>${kw}</span></div>\n`, '<div class="project-keywords row-around">\n') + "\t\t\t\t\t\t\t</div>";
+        
+
+        project.innerHTML = `
+        <img src=${data.thumbnailPath}>
+              <div class="layer">
+                <h1 class="subtitle">${data.title}</h1>
+                ${keywords}
+                ${data.description}
+                <a class="read-more-btn" href="project-description.html?project=${i}">Read More: <br> <span class="material-symbols-outlined">read_more</span></a>
+            </div>\n
+        `;
+
+        return project
+    }
+
+
+    function displayProjectData(json){
+
+        var projectContainer = document.getElementById("portfolio-container");
+
+        const projects = ["9","1","2","3"];
+
+        for(let i in json){
+          if (projects.includes(i)) {
+            projectContainer
+                .appendChild(createProjectElement(json[i], i))
+          } 
+        }
+    }
 
   </script>
 </body>

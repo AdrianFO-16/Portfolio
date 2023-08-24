@@ -1,7 +1,7 @@
 {
     "1": {
         "title": "Credit Scoring using Advanced Multivariate Linear Regression Analysis (2021)",
-        "keywords": ["Advanced Linear Regression", "PCA", "Factor Analysis", "Linear Discriminant",  "Machine Learning", "Statistics", "Python"],
+        "keywords": ["Advanced Linear Regression", "Python", "Machine Learning", "PCA", "Statistics", "Factor Analysis", "Linear Discriminant"],
         "introduction": "introduction",
         "results": "results",
         "conclusion": "conclusion",
@@ -13,7 +13,7 @@
 
     "2": {
         "title": "E-commerce vehicle capacity vehicle routing problem (CVRP) optimization (2021)",
-        "keywords": ["TSP", "CVRP", "Optimization", "Machine Learning", "Streamlit", "Python", "Search Algorithms"],
+        "keywords": ["CVRP", "Python", "Optimization", "Machine Learning", "Streamlit", "TSP", "Search Algorithms"],
         "introduction": "introduction",
         "results": "results",
         "conclusion": "conclusion",
@@ -37,7 +37,7 @@
 
     "4": {
         "title": "Digital Signature (DS) Algorithm Implementation (2022)",
-        "keywords": ["Digital Signature", "Cybersecurity", "Cryptography", "Python", "Software Development"],
+        "keywords": ["DSA", "Cybersecurity", "Cryptography", "Python", "Software Development"],
         "introduction": "introduction",
         "results": "results",
         "conclusion": "conclusion",
@@ -73,7 +73,7 @@
 
     "7": {
         "title": "Ruin Probability with Crammer-Lundberg Risk Model (2021)",
-        "keywords": ["Ruin Probability", "Stochastic Simulation", "Stochastic Optimization", "Crammer-Lundberg Model", "Python"],
+        "keywords": ["Ruin Probability", "Stochastic Simulation", "Python","Stochastic Optimization"],
         "introduction": "introduction",
         "results": "results",
         "conclusion": "conclusion",
@@ -97,7 +97,7 @@
 
     "9": {
         "title": "Hacking the Oscars data story (2022)",
-        "keywords": ["Data Analysis", "Causal Inference", "Latent Dirichlet Allocation", "Machine Learning", "Statistics", "Web Design"],
+        "keywords": ["Data Analysis", "Causal Inference", "Python", "Machine Learning", "Latent Dirichlet Allocation", "Statistics", "Web Design"],
         "introduction": "introduction",
         "results": "results",
         "conclusion": "conclusion",
