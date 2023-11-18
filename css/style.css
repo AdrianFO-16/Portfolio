@@ -266,10 +266,13 @@ a:visited{
 
 
 
+
 .tab-titles{
     margin: 35px;
     align-items: center;
+    border-top: 1px solid #00aeff;
 }
+
 
 .tab-links{
     margin-top: 25px;
@@ -529,17 +532,25 @@ a:visited{
 
 .keyword{
 
-    background-color: #00aeff;
+    background-color: #0078af;
     border-radius: 5px;
     margin: 0px 5px 25px 5px;
     width: fit-content;
-
-}
-
-.keyword span{
     color: white;
     padding: 0px 20px;
+    display: inline-block;
 }
+
+p .keyword{
+    background-color:#0078af;
+    border-radius: 5px;
+    margin: 5px 0px 5px 0px;
+    width: fit-content;
+    color: white;
+    padding: 0px 5px;
+    display: inline-block;
+}
+
 
 
 .note{
@@ -569,6 +580,7 @@ a:visited{
         position: relative;
         left: 0;
         bottom: -12px;
+        
     }
     
     .complementary-skills{

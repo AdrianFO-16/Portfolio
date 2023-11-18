@@ -44,7 +44,7 @@
         <nav class="navigation-bar">
   
           <a href="index.html" style="text-decoration: none;">
-            <h1><b><span>A</span>A<span>F</span>O</b></h1>
+            <!-- <h1><b><span>A</span>A<span>F</span>O</b></h1> -->
           </a>
               
           <ul>
@@ -91,7 +91,7 @@
   </div>
   <!-- Contact -->
     <div class="foot-copy"><p>Made By: Adrián Ferrer</p></div>
-    <div class="under-construction"><p>Site under construction :)</p></div>
+    <!-- <div class="under-construction"><p>Site under construction :)</p></div> -->
 
   </div>
 
@@ -100,7 +100,7 @@
 
   fetch('./data/project-data.json')
           .then((response) => response.json())
-          .then((json) => displayProjectData(json));
+          .then(displayProjectData);
 
   function createProjectElement(data, i){
       var project = document.createElement('div');
@@ -108,7 +108,7 @@
 
       var keywords = data.keywords.
                           slice(0, 5).
-                              reduce((acc, kw) => acc + `\t\t\t\t\t\t\t\t<div class="keyword"><span>${kw}</span></div>\n`, '<div class="project-keywords row-around">\n') + "\t\t\t\t\t\t\t</div>";
+                              reduce((acc, kw) => acc + `<span class="keyword">${kw}</span>\n`, '<div class="project-keywords row-around">\n') + "</div>";
       
 
       project.innerHTML = `
@@ -117,7 +117,7 @@
               <h1 class="subtitle">${data.title}</h1>
               ${keywords}
               ${data.description}
-              <a class="read-more-btn" href="project-description.html?project=${i}">Read More: <br> <span class="material-symbols-outlined">read_more</span></a>
+              <a class="read-more-btn" href="project-description.html?project=${i}">Read More<br> <span class="material-symbols-outlined">read_more</span></a>
           </div>\n
       `;
 

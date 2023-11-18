@@ -40,16 +40,17 @@
     <nav class="navigation-bar">
 
         <a href="index.html" style="text-decoration: none;">
-            <h1><b><span>A</span>A<span>F</span>O</b></h1>
+            <!-- <h1><b><span>A</span>A<span>F</span>O</b></h1> -->
           </a>
           
         <ul>
         <li><a href="index.html">Home Page</a></li>
         <li><a href="projects.html">Portfolio</a></li>
         <li><a href="#introduction">Introduction</a></li>
+        <li><a href="#summary">Summary</a></li>
         <!-- <li><a href="#graphic">Flow Chart</a></li> -->
-        <li><a href="#results">Results</a></li>
-        <li><a href="#conclusion">Conclusion</a></li>
+        <!-- <li><a href="#results">Results</a></li> -->
+        <!-- <li><a href="#conclusion">Conclusion</a></li> -->
         <!-- <li><a href="#source-code">Source Code</a></li> -->
         <li><a href="#contact">Contact Me</a></li>
         </ul>
@@ -57,9 +58,8 @@
 
 
         <div class="header-text"> 
-            <h1 id="title-cont">Project Title</h1>
-            <div id="keywords-cont" class="project-keywords row-around"></div>
-            
+            <h1 id="title">Project Title</h1>
+            <div id="keywords" class="project-keywords row-around"></div>
         </div>
     </div>
     <!-- Header -->
@@ -67,7 +67,7 @@
     <div class="subbody">
     <div class="container" id="introduction">
         <h1 class="subtitle">Introduction</h1>
-        <p id="intro-cont">Concise, but comprehensive project description</p>
+        <!-- <p>Concise, but comprehensive project description</p> -->
     </div>
 
     <!-- <div class="container" id="graphic">
@@ -75,7 +75,12 @@
         <p>Graphic representation of the project. </p>
     </div> -->
 
-    <div class="container" id="results">
+    <div class="container" id="summary">
+        <h1 class="subtitle">Summary</h1>
+        <!-- <p>Main results of the project. Tables, charts, short analysis.</p> -->
+    </div>
+
+    <!-- <div class="container" id="results">
         <h1 class="subtitle">Results</h1>
         <p id="results-cont">Main results of the project. Tables, charts, short analysis.</p>
     </div>
@@ -84,7 +89,7 @@
     <div class="container" id="conclusion">
         <h1 class="subtitle">Conclusion</h1>
         <p id="conclusion-cont">Main highlights and insights produced during the project.</p>
-    </div>
+    </div> -->
 
     <!-- <div class="container" id="source-code">
         <h1 class="subtitle">Source Code / Code Embeds</h1>
@@ -109,7 +114,7 @@
   
 
       <div class="foot-copy"><p>Made By: Adrián Ferrer</p></div>
-      <div class="under-construction"><p>Site under construction :)</p></div>
+      <!-- <div class="under-construction"><p>Site under construction :)</p></div> -->
 
     </div>
 
@@ -118,17 +123,30 @@
         
         fetch('./data/project-data.json')
         .then((response) => response.json())
-        .then((json) => displayProjectData(json))
+        .then(displayProjectData)
 
 
         function createKeyWordElements(kw){
 
             var keyword = document.createElement('div');
-            keyword.className = "keyword";
+            keyword.className = "";
 
-            keyword.innerHTML = `<span>${kw}</span>`
+            keyword.innerHTML = `<span class='keyword'>${kw}</span>`
             
             return keyword;
+        }
+
+        function tryCreateSection(id, data){
+            var content = data[id];
+            var element = document.getElementById(id);
+
+            if (element == null)
+                return;
+
+            if (content != undefined)
+                element.innerHTML += content;
+            else
+                element.setAttribute('hidden', true);
         }
 
 
@@ -144,15 +162,12 @@
 
             const projectData = json[project];
 
-            document.title = projectData["title"]
+            document.title = projectData["title"];
+            document.getElementById("title").textContent = projectData["title"];
 
-            document.getElementById("title-cont").textContent = projectData["title"]
-            document.getElementById("intro-cont").innerHTML = projectData["description"]
-            document.getElementById("results-cont").innerHTML = projectData["results"]
-            document.getElementById("conclusion-cont").innerHTML = projectData["conclusion"]
+            Array.from(['introduction', 'summary']).forEach((id) => tryCreateSection(id, projectData))
 
-
-            var keyWordsEl = document.getElementById("keywords-cont");
+            var keyWordsEl = document.getElementById("keywords");
             
             projectData["keywords"].forEach((kw) => keyWordsEl.appendChild(createKeyWordElements(kw)));
         }
