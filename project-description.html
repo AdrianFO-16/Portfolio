@@ -46,12 +46,6 @@
         <ul>
         <li><a href="index.html">Home Page</a></li>
         <li><a href="projects.html">Portfolio</a></li>
-        <li><a href="#introduction">Introduction</a></li>
-        <li><a href="#summary">Summary</a></li>
-        <!-- <li><a href="#graphic">Flow Chart</a></li> -->
-        <!-- <li><a href="#results">Results</a></li> -->
-        <!-- <li><a href="#conclusion">Conclusion</a></li> -->
-        <!-- <li><a href="#source-code">Source Code</a></li> -->
         <li><a href="#contact">Contact Me</a></li>
         </ul>
     </nav>
@@ -66,35 +60,35 @@
 
     <div class="subbody">
     <div class="container" id="introduction">
-        <h1 class="subtitle">Introduction</h1>
-        <!-- <p>Concise, but comprehensive project description</p> -->
+        <h1 class="subtitle">Introduction</h1> 
+        <!-- <p>Concise, but comprehensive project description</p>  -->
     </div>
 
-    <!-- <div class="container" id="graphic">
-        <h1 class="subtitle">Graphic Explanaition / Flowchart</h1>
-        <p>Graphic representation of the project. </p>
-    </div> -->
+    <div class="container" id="graphic">
+        <h1 class="subtitle">Graphic Explanation / Flowchart</h1>
+        <!-- <p>Graphic representation of the project. </p> -->
+    </div>
 
     <div class="container" id="summary">
         <h1 class="subtitle">Summary</h1>
         <!-- <p>Main results of the project. Tables, charts, short analysis.</p> -->
     </div>
 
-    <!-- <div class="container" id="results">
+    <div class="container" id="results">
         <h1 class="subtitle">Results</h1>
-        <p id="results-cont">Main results of the project. Tables, charts, short analysis.</p>
+        <!-- <p id="results-cont">Main results of the project. Tables, charts, short analysis.</p> -->
     </div>
 
 
     <div class="container" id="conclusion">
         <h1 class="subtitle">Conclusion</h1>
-        <p id="conclusion-cont">Main highlights and insights produced during the project.</p>
-    </div> -->
+        <!-- <p id="conclusion-cont">Main highlights and insights produced during the project.</p> -->
+    </div> 
 
-    <!-- <div class="container" id="source-code">
+   <div class="container" id="source-code">
         <h1 class="subtitle">Source Code / Code Embeds</h1>
-        <p>Source code examples, snippets, main functions, link to github repository, and any possible code embed for live testing.</p>
-    </div> -->
+        <!-- <p>Source code examples, snippets, main functions, link to github repository, and any possible code embed for live testing.</p> -->
+    </div>
 
 
     <div class="container" id="contact">
@@ -114,8 +108,6 @@
   
 
       <div class="foot-copy"><p>Made By: Adrián Ferrer</p></div>
-      <!-- <div class="under-construction"><p>Site under construction :)</p></div> -->
-
     </div>
 
 
@@ -165,13 +157,13 @@
             document.title = projectData["title"];
             document.getElementById("title").textContent = projectData["title"];
 
-            Array.from(['introduction', 'summary']).forEach((id) => tryCreateSection(id, projectData))
+            Array.from(['introduction', 'graphic', 'summary', 'results', 'conclusion', 'source-code'])
+                .forEach((id) => tryCreateSection(id, projectData))
 
             var keyWordsEl = document.getElementById("keywords");
             
             projectData["keywords"].forEach((kw) => keyWordsEl.appendChild(createKeyWordElements(kw)));
         }
-        
 
     </script>
 </body>

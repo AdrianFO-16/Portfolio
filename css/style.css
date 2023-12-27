@@ -551,6 +551,10 @@ p .keyword{
     display: inline-block;
 }
 
+.project-summary{
+    font-size: 1.25rem;
+}
+
 
 
 .note{
