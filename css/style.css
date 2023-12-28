@@ -541,6 +541,7 @@ a:visited{
     display: inline-block;
 }
 
+
 p .keyword{
     background-color:#0078af;
     border-radius: 5px;
@@ -551,11 +552,28 @@ p .keyword{
     display: inline-block;
 }
 
-.project-summary{
+li .keyword{
+    background-color:#0078af;
+    border-radius: 5px;
+    margin: 5px 0px 5px 0px;
+    width: fit-content;
+    color: white;
+    padding: 0px 5px;
+    display: inline-block;
+}
+
+.project-description{
     font-size: 1.25rem;
 }
 
+.project-description p{
+    margin-bottom: 20px;
+}
 
+.project-description li{
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
 
 .note{
     margin: 20px;

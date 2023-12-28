@@ -2,7 +2,7 @@
     "1": {
         "title": "Credit Scoring using Advanced Multivariate Linear Regression Analysis (2021)",
         "keywords": ["Advanced Linear Regression", "Python", "Machine Learning", "PCA", "Statistics", "Factor Analysis", "Linear Discriminant"],
-        "summary": "<p class='project-summary'><span class='keyword'>Multivariate analysis</span>, in a broader context, refers to a collection of statistical techniques employed for the examination of multiple attributes associated with an individual or an object under observation. The majority of these techniques can be traced back as extensions originating from the univariate or bivariate foundational iterations. Within the scope of this study, three distinct methodologies are subjected to review, all aimed at facilitating the analysis and expansion of an existing <span class='keyword'>credit scoring system</span>. Specifically, the methodologies include <span class='keyword'>Linear Discriminant Analysis</span>, a rigorously variance-based approach utilized for class separation, namely those likely to exhibit repayment and those not inclined to do so. <span class='keyword'>Factor Analysis</span> is also considered, serving as a dimensionality reduction technique that capitalizes on the inherent correlations among attributes to ascertain a lower-dimensional representation of the dataset. Lastly, <span class='keyword'>Principal Component Analysis</span>, used as an exploratory instrument to determine the attributes that predominantly contribute to the variance observed within the dataset.</p>",
+        "summary": "<p class='project-summary'><span class='keyword'>Multivariate analysis</span>, in a broader context, refers to a collection of statistical techniques employed for the examination of multiple attributes associated with an individual or an object under observation. The majority of these techniques can be traced back as extensions originating from the univariate or bivariate foundational iterations. Within the scope of this study, three distinct methodologies are subjected to review, all aimed at facilitating the analysis and expansion of an existing <span class='keyword'>credit scoring system</span>. Specifically, the methodologies include <span class='keyword'>Linear Discriminant Analysis</span>, a rigorously variance-based approach utilized for class separation, namely those likely to exhibit repayment and those not inclined to do so. <span class='keyword'>Factor Analysis</span> is also considered, serving as a dimensionality reduction technique that capitalizes on the inherent correlations among attributes to ascertain a lower-dimensional representation of the dataset. Lastly, <span class='keyword'>Principal Component Analysis</span>, used as an exploratory instrument to determine the attributes that predominantly contribute to the variance observed within the dataset.</p><p class='project-summary'>Given a potential client dataset and the classification problem to be able to know who will be able to discern between <span class='keyword'>non payers and payers</span>. Feature selection is performed with the folowing algorithm: EDA selection, correlation análisis, backwards selection, <span class='keyword'>discrminant analysis</span> fisher selection. Following, an partner company provided letter-based scoring is expanded using the remaining features using central-notion metrics to determine payers and non payers. Alternatively, a benchmark of different machine learning models with cross-validation to determine the model that best describes the data resulted in high accuracy close to 98% in validation and test sets.</p><p class='project-summary'>Other data exploration insights:<ul><li> Categorical variables dominated significance and potential for linear separation of both classes, observed via <span class='keyword'>PCA projection</span>. </li><li> Factorial Analysis projection applied to TF-IDF matrix used as a cardinality reduction method for colapsing highly variable free-text entries into a compact set of categories (resulted in newly created significant linear separating feature).</li><li> Recognition of socio-economical biases in both data provided by partner company and already established scoring system.</li></ul></p>",
 
         "thumbnailPath": "img/proj1-thumbnail.png",
 
@@ -11,8 +11,9 @@
 
     "2": {
         "title": "E-commerce vehicle capacity vehicle routing problem (CVRP) optimization (2021)",
-        "keywords": ["CVRP", "Python", "Optimization", "Machine Learning", "Streamlit", "TSP", "Search Algorithms"],
+        "keywords": ["CVRP", "Python", "Optimization", "Machine Learning", "TSP", "Search Algorithms"],
         
+        "summary": "<p class='project-summary'>The pandemic caused by COVID-19 has revolutionized the world of electronic commerce, making it grow exponentially in a matter of months. Coppel has been one of the main Mexican companies that sought to adapt to this model, however, in the process they have faced problems such as 14-hour shifts for delivery employees, inefficient routes and customer insatisfaction when products where not recevied on time. To deal with this, the present work will address the optimization of the delivery routes of the Distribution Center focusing on the deliveries made on January 15, 2021. The methodology used consists of 3 phases: <span class='keyword'>grouping of nearby nodes</span>, <span class='keyword'>vehicle allocation</span> and traditional <span class='keyword'>travelling salesman problem</span> solving. In contrast to the solution implemented by this company, the number of routes were reduced from 21 to 15, travelling 563 km  less less. In this way, the methodology proved to be feasible to propose efficient routes with the capacity to be traveled in less time, being able to influence improvements in the delivery stategies used previously. Additionally, the computation time of our proposal was 1 minute 40 seconds(σ = 3) while the traditional <span class='keyword'>Capacitated Vehicle Routing Problem (CVRP)</span> exceeded 2 hours and 30 minutes (Intel Core i7-1065G7 at 1.50GHz).</p><p class='project-summary'>The proposed algorithm is as follows:<ol><li>Node grouping using <span class='keyword'>Restrained K-Means</span>, where the number of nodes grouped is restrained to 300 as requested by the partner company.</li><li>Vehicle allocation based on each cluster of nodes required capacity to be delivered and each available vehicle characteristics using simple <span class='keyword'>search algorithms</span> such as Random Restart.</li><li><span class='keyword'>TSP</span> solution for each cluster of nodes.</li></ol></p>",
 
         "thumbnailPath": "img/proj2-thumbnail.png",
 
@@ -23,6 +24,7 @@
         "title": "'Red Neuronal Multicapa para predecir la defunción en casos de COVID-19.' (2020-2021)",
         "keywords": ["COVID-19", "Deep Learning", "Python", "Streamlit"],
         
+        "summary": "<p class='project-summary'>The project leverages public data from the Mexican Institute of Social Security (IMSS), focusing on features such as comorbidities, age, and sex to predict the probability of a patient's death using a <span class='keyword'>Neural Network</span>. The motivation behind this initiative stems from the rapid escalation of demand for medical attention, surpassing the available healthcare resources. The project was conceived as a conceptual auxiliary tool to aid decision-making in critical situations where medical resources are strained.</p><p class='project-summary'>By analyzing key demographic and health-related variables, the model aims to provide insights into the likelihood of mortality for patients. The objective is to offer valuable predictive information that can be utilized in real-time to assist healthcare professionals and decision-makers in allocating limited resources effectively.</p><p class='project-summary'>In the context of an overwhelmed healthcare system, this tool serves as a potential aid in prioritizing and optimizing medical interventions based on the predicted death probabilities. The intention is to contribute to more informed decision-making processes during times of heightened demand and resource scarcity, ultimately improving the efficiency and effectiveness of medical care in critical situations.</p>",
 
         "thumbnailPath": "img/proj3-thumbnail.png",
 
@@ -33,57 +35,63 @@
         "title": "Digital Signature (DS) Algorithm Implementation (2022)",
         "keywords": ["DSA", "Cybersecurity", "Cryptography", "Python", "Software Development"],
         
+        "summary": "<p class='project-summary'>Project developed under the supervision of non-lucrative Mexican organization Teletón. A multidisciplinary project with the objective of making cryptographic technology accessible for non technical users. The end product is an application designed to be used in the company's processes by people with no technical expertise. The result was a simple app with simple UI elements that facilitate the use of Digital Signature algorithms using RSA encryption to establish identity and authority.</p>",
 
         "thumbnailPath": "img/proj4-thumbnail.png",
 
-        "description": "<p>Project developed under the supervision of non-lucrative Mexican organization Teletón. A multidisciplinary project with the objective of making cryptographic technology accessible for non technical users. Lead code designer, app functionality and user cycle. Developed the main logic and Python code blocks to be used in the final application, assisted in UI and app design. The final product consists of the app implementation of the DS algorithm and a publicity <a href='https://optima-app.000webhostapp.com/index.html' target='_blank'>dummy web page.</a></p>"
+        "description": "<p>Project developed under the supervision of non-lucrative Mexican organization Teletón. A multidisciplinary project with the objective of making cryptographic technology accessible for non technical users. Lead code designer, app functionality and user cycle. Developed the main logic and Python code blocks to be used in the final application, assisted in UI and app design. The final product consists of the app implementation of the DS algorithm and a prototype dummy web page.</p>"
     },
 
     "5": {
         "title": "Topological Data Analysis (TDA) in gravitational wave data using time delay embedding (2022)",
         "keywords": ["TDA", "Time Embeddings", "Machine Learning", "Python"],
         
-
+        "summary": "<p class='project-summary'>Using an example dataset for <span class='keyword'>Topological Data Analysis</span>, clean and noisy gravitational waves are transformed into 3D representations using time embeddings. Following, they are analyzed in terms of <span class='keyword'>Vietoris Rips</span> persistence homology. Finally, features are engineered for the 0-hole and 1-hole persistence and are fed to a machine learning model to distinguish clean and noisy gravitational waves. The trained model was <span class='keyword'>Logistic Regression</span>, achieving below 70% accuracy and an AUC of 0.76 on validation set.</p><p class='project-summary'>Note: the background image and theme of this website is the 3D visualization of the time embeddings of a clean gravitational wave!</p>",
+        
+        
         "thumbnailPath": "img/proj5-thumbnail.png",
-
+        
         "description": "<p>Analysis of clean and noisy gravitational wave data using time delay embeddings. Vietoris-Rips complex data persistence homology analysis. Classification of noisy and clean gravitational waves based on engineered features from persistence homology.</p>"
     },
-
+    
     "6": {
         "title": "Control Theory for building vibration control in earthquakes (2022)",
         "keywords": ["LTI Control", "Earthquake simulation", "Signal Processing", "MATLAB & Simulink"],
         
-
+        "summary": "<p class='project-description'>The lateral displacement of buildings with multiple degrees of freedom was mathematically modeled using a <span class='keyword'>system of linear differential equations</span>, considering simulated harmonic seismic excitation as a sinusoidal wave. In the analysis of this model for a structure with 2 floors and a roof (3 masses, 3 degrees of freedom), an internally and externally stable system was observed. The resonance frequency with the most significant impact over infinite time resulted in a lateral displacement scaling at 26.71 dB.</p><p class='project-description'>Subsequently, <span class='keyword'>active control</span> models (closed-loop control) were examined to mitigate the violent scaling at this <span class='keyword'>resonance frequency</span>. Models of Hydraulic Actuators with Active Damping Mass and the design of control laws using the <span class='keyword'>Optimal Control Riccati Algorithm</span> were studied. Both control models were implemented together and separately in the model with no control, and their behavior concerning a highlighted threatening resonance frequency was analyzed.</p><p class='project-description'>Each control implementation had the expected effect, achieving a satisfactory reduction in scaling at the resonance frequency. The model that exhibited the best attenuation of the effect was the one combining both active control techniques. The source code, simulations, and animations can be found in the <a href='https://adrianfo-16.github.io/ModelacionMatematicaControlDeSismos/' target='_blank'>project webpage</a>.</p>",
         "thumbnailPath": "img/proj6-thumbnail.png",
-
+        
         "description": "<p>Study of modern building LTI models, active and passive actuators concepts for vibration control during earthquakes. System modeled in Simulink and code in state space representation. Analysis of analytic and numeric solutions facing seismic excitation before and after the implementation of control techniques. Lead code developer and project designer.</p>"
     },
-
+    
     "7": {
         "title": "Ruin Probability with Crammer-Lundberg Risk Model (2021)",
         "keywords": ["Ruin Probability", "Stochastic Simulation", "Python","Stochastic Optimization"],
         
-        
-        "thumbnailPath": "img/proj7-thumbnail.png",
+        "summary":"<p class='project-description'>In the context of insurance companies, the relation between company customers can be modeled as a stochastic process and further studied as the applied probability field known as <span class='keyword'>Ruin Theory</span>. The <span class='keyword'>Crammer-Lundberg ruin model</span> is a classic model that tries to explain this relation. Given a starting capital amount, per time unit income, and a <span class='keyword'>Poisson Process</span>, the expected balance at a given point in time can be modeled. Alongside this theoretical setting and a real dataset provided by insurance company AXA the Crammer-Lundberg model is used to study ruin probability and simulate the balance of a theoretical insurance company.</p><p class='project-description'>Firstly, the intensity Poisson Process parameter is estimated from the data, as well as a distribution is fitted to explain the claim amount. The distribution that best fitted the provided data was an <span class='keyword'>exponential distribution</span>, and an <span class='keyword'>exponential power distribution </span>. Following, using this estimations, given any initial capital amount, ruin probability is computed both closed form (only for exponential distribution) and numerically (through simulation). In the case of the exponential power distribution, the closed form solution is approximated through <span class='keyword'>De Vylder´s method</span>.</p>",
 
+        "thumbnailPath": "img/proj7-thumbnail.png",
+        
         "description": "<p>Project developed under the supervision of nationwide corporation AXA. Provided a dataset, based on monthly income, client claim amount distribution, and corporation reserve, ruin probability is computed. Results obtained via analytic solution of the Crammer-Lundberg model and simulation. Lead code developer and project designer.</p>"
     },
-
+    
     "8": {
         "title": "Online Portfolio (2022-present)",
         "keywords": ["Web Design", "HTML", "CSS", "JS"],
         
-
+        "summary": "<p class='project-summary'>This website uses simple HTML CSS and JavaScript to make a simple but neat academic/professional presentation webpage.</p>",
+        
         "thumbnailPath": "img/proj8-thumbnail.png",
-
+        
         "description": "<p>This webpage! This project is being developed with the purpose of learning HTML, CSS, JS, etc. and also complement my academic/professional profile while doing so.</p>"
     },
-
+    
     "9": {
         "title": "Hacking the Oscars data story (2022)",
         "keywords": ["Data Analysis", "Causal Inference", "Python", "Machine Learning", "Latent Dirichlet Allocation", "Statistics", "Web Design"],
         
-        
+        "summary": "<p class='project-summary'>A data-driven approach is tested to quantify movie success. The following questions are tried to be given answer: Is there a combination of set factors that ultimately determine movie success? Can a data-driven approach capture such factors? Using open access datasets such as the <span class='keyword'>CMU movie summary corpus</span> and <span class='keyword'>IMDB dataset</span>, a thoroughfully data cleaning and exploration is done to match data from two rather different data sources. Taking the most representative occurrences of language, countries and genres, the following steps were made:</p><p class='project-summary'>As part of exploratory analyses, biases, and unbalanced data was found. Most present movies were in english language, and or produced in the USA. <span class='keyword'>Latent Dirichlet Allocation</span> was performed on the movies plot summaries, from where 4 common topics where extracted from the highest weighted words. The topics found were Romcoms/Dramas, International historical movies, Low-budget Action movies, Classic American Cartoons. Following, the metric used to quantify success was the IMDB score, consequently, the next analyses where focused on trying to describe factors that influence high and low IMDB scores.</p><p class='project-summary'>The data was divided into two classes, 5-Star rated movies, and movies rated below 5 stars. Statistical analysis using apropriate significance corrections shows that factor such as being produced in the USA, genre being Drama and english language are significantly  diferent between both classes. Further increasing the awareness of the present bias in the analyzed data. In general, the analysis shows that IMDB users tend to rate higher non western movies, however there is a lot to be discussed about this results. Such as the amount of movies that are 5 Star rated and those who are not vs. the estimated and actual audience size for each class, the average IMDB user and the validity of the IMDB score as a measure of success. This data analysis poses just as an interesting deep dive into the intersection of both datasets and ideas and comparisons established in the analysis. A more thorough report can be found in the <a href='https://adrianfo-16.github.io/ADA-adlucere2022-web-page/' target='_blank'>project website.</a></p>", 
+
         "thumbnailPath": "img/proj9-thumbnail.png",
 
         "description": "<p>\"Hacking the Oscars\" is a project developed as part of the Applied Data Analysis EPFL course. Elaborate data wrangling performed on <a href='http://www.cs.cmu.edu/~ark/personas/' target='_blank'>CMU movie summary corpus dataset</a> along with IMDb datasets to understand movie success througha data-driven approach. Statistical differences between highest rated and lower rated movies are explored. Use of unsupervised learning techniques such as Latent Dirichlet Allocation for movie summary plots for feature engineering and interpretation. Participated actively in code and analysis design, <a href='https://adrianfo-16.github.io/ADA-adlucere2022-web-page/' target='_blank'>developed the presentation web page (data story).</a></p>"
